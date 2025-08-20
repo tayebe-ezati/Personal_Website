@@ -136,3 +136,57 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
+
+.about-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.about-pic {
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.about-text .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
