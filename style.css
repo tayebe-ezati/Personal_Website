@@ -287,3 +287,18 @@ img {
   .navbar .logo { font-size: 1.2rem; }
   .service { padding: 14px; }
 }
+
+
+/* CTA button in navbar */
+.navbar .btn {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background: #ff4040;
+}
