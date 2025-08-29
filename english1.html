@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Exercise 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">Tayebe</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="exercises.html" class="active">Exercises</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="section">
+    <h1>English Exercise 1: Fill in the blanks</h1>
+    <p>Complete the sentences with the correct word.</p>
+
+    <div class="exercise-box">
+      <ol>
+        <li>
+          I ____ a student.  
+          <br>
+          <label><input type="radio" name="q1"> am</label><br>
+          <label><input type="radio" name="q1"> is</label><br>
+          <label><input type="radio" name="q1"> are</label>
+        </li>
+
+        <li>
+          She ____ from Canada.  
+          <br>
+          <label><input type="radio" name="q2"> am</label><br>
+          <label><input type="radio" name="q2"> is</label><br>
+          <label><input type="radio" name="q2"> are</label>
+        </li>
+
+        <li>
+          They ____ my friends.  
+          <br>
+          <label><input type="radio" name="q3"> am</label><br>
+          <label><input type="radio" name="q3"> is</label><br>
+          <label><input type="radio" name="q3"> are</label>
+        </li>
+      </ol>
+
+      <button onclick="checkAnswers()" class="btn">Check Answers</button>
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tayebe Ezzatabadi Pour</p>
+  </footer>
+
+  <!-- Script for checking answers -->
+  <script>
+    function checkAnswers() {
+      let score = 0;
+      if (document.querySelector('input[name="q1"]:checked')?.nextSibling.textContent.trim() === "am") score++;
+      if (document.querySelector('input[name="q2"]:checked')?.nextSibling.textContent.trim() === "is") score++;
+      if (document.querySelector('input[name="q3"]:checked')?.nextSibling.textContent.trim() === "are") score++;
+
+      document.getElementById("result").innerText = "Your score: " + score + "/3";
+    }
+  </script>
+</body>
+</html>
