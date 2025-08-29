@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Exercise 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Data Science - Exercise 1</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Task: Analyze a Small Dataset</h2>
+    <p>
+      Imagine you have the following data about the number of hours students studied in one week:
+    </p>
+
+    <pre>
+      Alice: 5
+      Bob: 8
+      Carol: 2
+      David: 10
+      Emma: 7
+    </pre>
+
+    <h3>Your Task:</h3>
+    <ul>
+      <li>Find the student who studied the most hours.</li>
+      <li>Find the student who studied the least hours.</li>
+      <li>Calculate the average study hours.</li>
+    </ul>
+
+    <p>
+      You can do this using pen & paper or with a simple Python code like this:
+    </p>
+
+    <pre>
+      data = {"Alice": 5, "Bob": 8, "Carol": 2, "David": 10, "Emma": 7}
+      print("Max:", max(data, key=data.get))
+      print("Min:", min(data, key=data.get))
+      print("Average:", sum(data.values()) / len(data))
+    </pre>
+
+    <a href="exercises.html" class="btn">⬅ Back to Exercises</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tayebe Ezzatabadi Pour</p>
+  </footer>
+</body>
+</html>
