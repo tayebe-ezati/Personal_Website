@@ -3,36 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Practice - Home</title>
+  <title>Exercises - Tayebe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to English Practice</h1>
     <nav>
-      <ul>
+      <div class="logo">Tayebe</div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Exercises</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="exercises.html" class="active">Exercises</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Improve Your English Every Day</h2>
-    <p>
-      This website is designed to help you practice English step by step.  
-      You will find simple exercises, useful vocabulary, and interactive lessons.
-    </p>
-    <p>
-      Start your journey today and make English practice a daily habit!
-    </p>
-    <a href="services.html" class="btn">Go to Exercises</a>
-  </main>
+  <section class="section">
+    <h1>Practice Exercises</h1>
+    <p>Select a category to start practicing:</p>
+
+    <div class="exercise-categories">
+      <div class="card">
+        <h2>English Exercises</h2>
+        <p>Practice grammar, vocabulary, and reading.</p>
+        <a href="exercises/english1.html" class="btn">Start English</a>
+      </div>
+
+      <div class="card">
+        <h2>Web Development</h2>
+        <p>Learn HTML, CSS, and build real projects.</p>
+        <a href="exercises/web1.html" class="btn">Start Web</a>
+      </div>
+
+      <div class="card">
+        <h2>Data Science</h2>
+        <p>Practice data analysis and beginner Python tasks.</p>
+        <a href="exercises/data1.html" class="btn">Start Data</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 English Practice. All rights reserved.</p>
+    <p>© 2025 Tayebe Ezzatabadi Pour</p>
   </footer>
 </body>
 </html>
