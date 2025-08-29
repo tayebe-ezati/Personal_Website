@@ -4,57 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Science Exercise 1</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <header>
-    <h1>Data Science - Exercise 1</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="exercises.html">Exercises</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <div class="logo">Tayebe</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../exercises.html" class="active">Exercises</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Task: Analyze a Small Dataset</h2>
+  <main class="section">
+    <h1>Data Science Exercise 1</h1>
+    <p>In this exercise, you will work with a simple dataset.</p>
+
+    <h2>Task</h2>
     <p>
-      Imagine you have the following data about the number of hours students studied in one week:
+      Imagine you have the following dataset of students and their scores:
     </p>
 
-    <pre>
-      Alice: 5
-      Bob: 8
-      Carol: 2
-      David: 10
-      Emma: 7
-    </pre>
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>Reza</td>
+        <td>74</td>
+      </tr>
+    </table>
 
-    <h3>Your Task:</h3>
+    <p>Your task:</p>
     <ul>
-      <li>Find the student who studied the most hours.</li>
-      <li>Find the student who studied the least hours.</li>
-      <li>Calculate the average study hours.</li>
+      <li>Find the student with the highest score.</li>
+      <li>Find the student with the lowest score.</li>
+      <li>Calculate the average score.</li>
     </ul>
 
-    <p>
-      You can do this using pen & paper or with a simple Python code like this:
-    </p>
-
-    <pre>
-      data = {"Alice": 5, "Bob": 8, "Carol": 2, "David": 10, "Emma": 7}
-      print("Max:", max(data, key=data.get))
-      print("Min:", min(data, key=data.get))
-      print("Average:", sum(data.values()) / len(data))
-    </pre>
-
-    <a href="exercises.html" class="btn">⬅ Back to Exercises</a>
+    <p>You can do this manually or using Python (if you know the basics).</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tayebe Ezzatabadi Pour</p>
+    <p>© 2025 Tayebe Ezzatabadi Pour</p>
   </footer>
 </body>
 </html>
