@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Exercise 1</title>
+  <title>English Practice 1 | Tayebe</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -15,50 +15,47 @@
         <li><a href="../about.html">About</a></li>
         <li><a href="../services.html">Services</a></li>
         <li><a href="../contact.html">Contact</a></li>
-        <li><a href="../exercises.html" class="active">Exercises</a></li>
+        <li><a href="../thanks.html">Exercises</a></li>
+        <li><a href="../resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="section">
-    <h1>English Exercise 1: Fill in the blanks</h1>
-    <p>Complete the sentences with the correct word.</p>
+    <h1>English Practice – Level A2/B1</h1>
+    <p>Improve your vocabulary and grammar step by step. Try the exercises below:</p>
 
-    <form id="exerciseForm">
-      <p>I ____ a student.</p>
-      <label><input type="radio" name="q1" value="am"> am</label><br>
-      <label><input type="radio" name="q1" value="is"> is</label><br>
-      <label><input type="radio" name="q1" value="are"> are</label><br><br>
+    <div class="card-container">
+      <div class="card">
+        <h2>Exercise 1: Fill in the blanks</h2>
+        <p>Complete the sentences with the correct form of the verb in brackets:</p>
+        <ol>
+          <li>I ____ (go) to the gym every Saturday.</li>
+          <li>She ____ (study) English for two years.</li>
+          <li>They ____ (not / like) coffee, they prefer tea.</li>
+        </ol>
+      </div>
 
-      <p>She ____ from Canada.</p>
-      <label><input type="radio" name="q2" value="am"> am</label><br>
-      <label><input type="radio" name="q2" value="is"> is</label><br>
-      <label><input type="radio" name="q2" value="are"> are</label><br><br>
+      <div class="card">
+        <h2>Exercise 2: Vocabulary</h2>
+        <p>Match the words with their meanings:</p>
+        <ul>
+          <li><b>confident</b> → a) feeling sure of yourself</li>
+          <li><b>reliable</b> → b) someone you can trust</li>
+          <li><b>curious</b> → c) wanting to know or learn something</li>
+        </ul>
+      </div>
+    </div>
 
-      <p>They ____ my friends.</p>
-      <label><input type="radio" name="q3" value="am"> am</label><br>
-      <label><input type="radio" name="q3" value="is"> is</label><br>
-      <label><input type="radio" name="q3" value="are"> are</label><br><br>
-
-      <button type="button" onclick="checkAnswers()" class="btn">Check Answers</button>
-    </form>
-
-    <div id="result" style="margin-top:20px; font-weight:bold;"></div>
+    <a href="../thanks.html" class="btn">⬅ Back to Exercises</a>
   </main>
 
   <footer>
-    <p>© 2025 Tayebe Ezzatabadi Pour</p>
+    <p>
+      © 2025 Tayebe Ezzatabadi Pour |
+      <a href="https://github.com/tayebe-ezati" target="_blank">GitHub</a> |
+      <a href="../resume.pdf" target="_blank">Resume</a>
+    </p>
   </footer>
-
-  <script>
-    function checkAnswers() {
-      let score = 0;
-      if (document.querySelector('input[name="q1"]:checked')?.value === "am") score++;
-      if (document.querySelector('input[name="q2"]:checked')?.value === "is") score++;
-      if (document.querySelector('input[name="q3"]:checked')?.value === "are") score++;
-
-      document.getElementById("result").innerText = "Your score: " + score + "/3";
-    }
-  </script>
 </body>
 </html>
