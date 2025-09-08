@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Services | Tayebe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Tayebe</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="exercises.html">Exercises</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </nav>
+  <header class="navbar container">
+    <div class="logo">🌟 Tayebe</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="lessons/index.html">Lessons</a></li>
+      <li><a href="exercises.html">Exercises</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </header>
 
-  <main class="section">
-    <h1>My Services</h1>
-
-    <div class="service-item">
-      <h2>English Tutoring</h2>
-      <p>Helping students improve their English skills with practical exercises, conversations, and personalized feedback.</p>
-    </div>
-
-    <div class="service-item">
-      <h2>Web Development (in training)</h2>
-      <p>Building simple websites, personal portfolios, and practice projects while learning HTML, CSS, and GitHub.</p>
-    </div>
-
-    <div class="service-item">
-      <h2>Data Analysis (basic)</h2>
-      <p>Applying statistical knowledge and beginner-level data science techniques to analyze small datasets.</p>
-    </div>
+  <main class="container">
+    <section class="section">
+      <h1>Services</h1>
+      <div class="card-container">
+        <div class="card">
+          <h3>English Tutoring</h3>
+          <p>Private lessons (online), conversation practice, exam prep.</p>
+        </div>
+        <div class="card">
+          <h3>Website Help (basic)</h3>
+          <p>Small landing pages, portfolio setup, GitHub Pages deployment.</p>
+        </div>
+        <div class="card">
+          <h3>Data Analysis (small jobs)</h3>
+          <p>Data cleaning/analysis and simple visualizations (Pandas + Matplotlib).</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>
-      © 2025 Tayebe Ezzatabadi Pour |
-      <a href="https://github.com/tayebe-ezati" target="_blank">GitHub</a> |
-      <a href="resume.pdf" target="_blank">Resume</a>
-    </p>
+    <p>© 2025 Tayebe Ezzatabadi Pour</p>
   </footer>
 </body>
 </html>

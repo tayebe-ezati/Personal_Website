@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tayebe | Personal Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tayebe | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
+  <header class="navbar container">
     <div class="logo">🌟 Tayebe</div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="lessons/index.html">Lessons</a></li>
+      <li><a href="exercises.html">Exercises</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://forms.gle/dRpPjLdkdUDGqFoeA" target="_blank" class="btn">🚀 Join Now</a></li>
-
-      <!-- Dropdown Menu for AI Agents -->
-      <li class="dropdown">
-        <a href="#" class="dropbtn">AI Agents</a>
-        <div class="dropdown-content">
-          <a href="#grammar">Grammar Agent</a>
-          <a href="#data">Data Agent</a>
-        </div>
-      </li>
     </ul>
-  </nav>
+  </header>
 
-  <!-- AI Agent Content (just for display) -->
-  <section id="grammar">
-    <h2>Grammar Agent</h2>
-    <p>Learn grammar with the best tips and exercises.</p>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <h1>Hello — I'm Tayebe 👋</h1>
+      <p>I teach English, and I'm building skills in Web Development & Data Science. Follow the lessons and exercises to practice along.</p>
+      <p style="margin-top:14px;">
+        <a class="btn" href="lessons/index.html">Start Lessons</a>
+        <a class="btn" href="exercises.html" style="margin-left:10px">Go to Exercises</a>
+      </p>
+    </section>
 
-  <section id="data">
-    <h2>Data Agent</h2>
-    <p>Explore data science with simple tutorials.</p>
-  </section>
-
-  <!-- Rest of the content here -->
+    <section class="section">
+      <div class="card-container">
+        <div class="card">
+          <h2>English Tutoring</h2>
+          <p>Lessons, practice worksheets and one-on-one tutoring (online).</p>
+        </div>
+        <div class="card">
+          <h2>Web Development</h2>
+          <p>Small step-by-step HTML & CSS lessons; practice pages to build portfolio.</p>
+        </div>
+        <div class="card">
+          <h2>Data Science</h2>
+          <p>Beginner-friendly data tasks, EDA examples and explanations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Tayebe Ezzatabadi Pour</p>

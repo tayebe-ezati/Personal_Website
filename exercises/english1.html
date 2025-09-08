@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Practice 1 | Tayebe</title>
-  <link rel="stylesheet" href="../style.css">
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>English Ex1</title>
+<link rel="stylesheet" href="../style.css"></head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Tayebe</div>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../services.html">Services</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-        <li><a href="../thanks.html">Exercises</a></li>
-        <li><a href="../resume.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </nav>
+  <header class="navbar container">
+    <div class="logo">🌟 Tayebe</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../lessons/index.html">Lessons</a></li>
+      <li><a href="../exercises.html" class="active">Exercises</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
   </header>
 
-  <main class="section">
-    <h1>English Practice – Level A2/B1</h1>
-    <p>Improve your vocabulary and grammar step by step. Try the exercises below:</p>
+  <main class="container section">
+    <h1>English Exercise 1: Fill in the blanks</h1>
+    <p>Complete the sentences with the correct word.</p>
 
-    <div class="card-container">
-      <div class="card">
-        <h2>Exercise 1: Fill in the blanks</h2>
-        <p>Complete the sentences with the correct form of the verb in brackets:</p>
-        <ol>
-          <li>I ____ (go) to the gym every Saturday.</li>
-          <li>She ____ (study) English for two years.</li>
-          <li>They ____ (not / like) coffee, they prefer tea.</li>
-        </ol>
-      </div>
+    <form id="exerciseForm">
+      <p>1) I ____ a student.</p>
+      <label><input type="radio" name="q1" value="am"> am</label><br>
+      <label><input type="radio" name="q1" value="is"> is</label><br>
+      <label><input type="radio" name="q1" value="are"> are</label><br><br>
 
-      <div class="card">
-        <h2>Exercise 2: Vocabulary</h2>
-        <p>Match the words with their meanings:</p>
-        <ul>
-          <li><b>confident</b> → a) feeling sure of yourself</li>
-          <li><b>reliable</b> → b) someone you can trust</li>
-          <li><b>curious</b> → c) wanting to know or learn something</li>
-        </ul>
-      </div>
-    </div>
+      <p>2) She ____ from Canada.</p>
+      <label><input type="radio" name="q2" value="am"> am</label><br>
+      <label><input type="radio" name="q2" value="is"> is</label><br>
+      <label><input type="radio" name="q2" value="are"> are</label><br><br>
 
-    <a href="../thanks.html" class="btn">⬅ Back to Exercises</a>
+      <p>3) They ____ my friends.</p>
+      <label><input type="radio" name="q3" value="am"> am</label><br>
+      <label><input type="radio" name="q3" value="is"> is</label><br>
+      <label><input type="radio" name="q3" value="are"> are</label><br><br>
+
+      <button type="button" class="btn" onclick="check()">Check Answers</button>
+    </form>
+
+    <p id="result" style="margin-top:12px; font-weight:700"></p>
   </main>
 
-  <footer>
-    <p>
-      © 2025 Tayebe Ezzatabadi Pour |
-      <a href="https://github.com/tayebe-ezati" target="_blank">GitHub</a> |
-      <a href="../resume.pdf" target="_blank">Resume</a>
-    </p>
-  </footer>
-</body>
-</html>
+  <footer><p>© 2025 Tayebe</p></footer>
+
+<script>
+function check(){
+  let score = 0;
+  try {
+    if (document.querySelector('input[name="q1"]:checked').value === "am") score++;
+    if (document.querySelector('input[name="q2"]:checked').value === "is") score++;
+    if (document.querySelector('input[name="q3"]:checked').value === "are") score++;
+  } catch(e) { /* ignore if no answer selected */ }
+  document.getElementById("result").innerText = "Score: " + score + "/3";
+}
+</script>
+</body></html>

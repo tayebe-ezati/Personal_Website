@@ -1,39 +1,97 @@
-/* Add styles for dropdown menu */
-.navbar .dropdown {
-  position: relative;
-  display: inline-block;
+/* Reset + global */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+  color: #222;
+  background: #f6f7fb;
 }
 
-.navbar .dropbtn {
-  background-color: #333;
-  color: white;
-  padding: 14px 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-
-.navbar .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.navbar .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.navbar .dropdown-content a {
-  color: white;
-  padding: 12px 16px;
+.navbar .logo { font-weight: 700; font-size: 1.2rem; color: #fff; }
+.nav-links { list-style: none; display: flex; gap: 10px; align-items: center; margin: 0; }
+.nav-links li { }
+.nav-links a {
+  color: #fff;
   text-decoration: none;
-  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: transparent;
+  font-weight: 600;
+}
+.nav-links a:hover { background: #4f46e5; color: #fff; }
+.nav-links a.active { background: #6c63ff; color: #fff; }
+
+/* CTA */
+.btn {
+  background: #6c63ff;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover { background: #4f46e5; }
+
+/* Layout helpers */
+.container { width: 92%; max-width: 1100px; margin: 0 auto; padding: 28px 0; }
+.section { padding: 36px 0; }
+.hero { padding: 48px 0; text-align: center; }
+
+/* Headings */
+h1 { font-size: 2rem; margin-bottom: 10px; color: #111; }
+h2 { font-size: 1.3rem; margin: 14px 0; color: #222; }
+
+/* Cards / lists */
+.card-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(14,14,20,0.06);
 }
 
-.navbar .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+/* Forms */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+  font-family: inherit;
+}
+textarea { min-height: 120px; resize: vertical; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+table th, table td {
+  border: 1px solid #e5e7eb; padding: 10px; text-align: left;
+}
+table th { background: #fafafa; font-weight: 700; }
+
+/* Footer */
+footer {
+  background: #111; color: #fff; text-align: center; padding: 18px 0; margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { gap: 6px; }
+  h1 { font-size: 1.6rem; }
+  .container { width: 95%; }
 }

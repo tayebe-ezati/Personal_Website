@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>English Ex2</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+  <header class="navbar container">
+    <div class="logo">🌟 Tayebe</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../lessons/index.html">Lessons</a></li>
+      <li><a href="../exercises.html" class="active">Exercises</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <main class="container section">
+    <h1>English Exercise 2</h1>
+    <p>Choose the correct form (present simple or present continuous):</p>
+    <ol>
+      <li>Right now she ____ (write) a letter.
+        <br>
+        <label><input type="radio" name="a1" value="writes"> writes</label>
+        <label style="margin-left:10px"><input type="radio" name="a1" value="is writing"> is writing</label>
+      </li>
+      <li>They usually ____ (go) to school by bus.
+        <br>
+        <label><input type="radio" name="a2" value="go"> go</label>
+        <label style="margin-left:10px"><input type="radio" name="a2" value="are going"> are going</label>
+      </li>
+    </ol>
+    <button class="btn" onclick="grade()">Check</button>
+    <p id="out" style="margin-top:12px;font-weight:700"></p>
+  </main>
+
+  <footer><p>© 2025 Tayebe</p></footer>
+
+<script>
+function grade(){
+  let sc=0;
+  if(document.querySelector('input[name="a1"]:checked')?.value === "is writing") sc++;
+  if(document.querySelector('input[name="a2"]:checked')?.value === "go") sc++;
+  document.getElementById("out").innerText = "Score: "+sc+"/2";
+}
+</script>
+</body></html>

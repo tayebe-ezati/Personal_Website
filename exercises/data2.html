@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Data Ex2</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+  <header class="navbar container">
+    <div class="logo">🌟 Tayebe</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../lessons/index.html">Lessons</a></li>
+      <li><a href="../exercises.html" class="active">Exercises</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <main class="container section">
+    <h1>Data Exercise 2 — Titanic hint</h1>
+    <p>Task: Using pandas (Colab), compute survival rate by sex and by Pclass. Example code:</p>
+    <pre>
+import pandas as pd
+df = pd.read_csv("titanic.csv")
+print(df['Sex'].value_counts())
+survival_by_sex = df.groupby('Sex')['Survived'].mean()
+print(survival_by_sex)
+    </pre>
+    <p>Save your PNG charts in <code>outputs/</code> and link them in a README.</p>
+  </main>
+
+  <footer><p>© 2025 Tayebe</p></footer>
+</body></html>
